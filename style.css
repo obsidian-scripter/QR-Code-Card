@@ -1,0 +1,78 @@
+:root {
+    /* ========== COLORS =========== */
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+    /* ========== COLORS =========== */
+    /* ========== FONT VARIABLES =========== */
+    --f-size: 15px;
+    --f-family: 'Outfit', Roboto, Sans-serif;
+    --f-s-weight: 400;
+    --f-l-weight: 700;
+    /* ========== FONT VARIABLES =========== */
+}
+
+/* ========== CSS RESET START =========== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--f-family);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--lightGray);
+    display: grid;
+    place-items: center;
+    font-size: var(--f-size);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* ========== CSS RESET END =========== */
+
+.card {
+    width: calc(375px * 0.85);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.card, .card > img {
+    border-radius: 5%;
+}
+
+h2 {
+    padding: 1em 0.5em 0 0.5em;
+    color: var(--darkBlue);
+}
+
+p {
+    font-weight: var(--f-s-weight);
+    color: var(--grayishBlue);
+    padding: 0.75em 0.75em 1.25rem 0.75em;
+}
+
+
